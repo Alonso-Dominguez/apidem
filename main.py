@@ -10,6 +10,10 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/personas")
-def get_personas():
-    return {"id":1, "nombre": "Chucho"}
+@app.get("/v1/contactos")
+async get_contactos():
+    # TODO read contactos.csv
+    # TODO JSON encode contactos 
+    # TODO save in response y mostrar la URI
+    response = []
+    return response
